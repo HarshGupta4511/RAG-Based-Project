@@ -1,0 +1,25 @@
+ prompt = f"""
+You are a course search assistant.
+
+Course data:
+{"number":{"4359":" 14 ","6060":" 15 ","5811":" 15 ","4498":" 14 ","4443":" 14 ","4402":" 14 ","6042":" 15 ","5195":" 14 ","5818":" 15 "},"chunk_id":{"4359":4359,"6060":6060,"5811":5811,"4498":4498,"4443":4443,"4402":4402,"6042":6042,"5195":5195,"5818":5818},"text":{"4359":" So what is while loop?","6060":" While loop","5811":" For loop and while loop","4498":" Using while loop.","4443":" What is the condition in while loop?","4402":" The whole time, the whole time will learn to learn to do while loop.","6042":" Because loop is a while loop","5195":" And, here, I have used a while loop here.","5818":" Write a loop on the while and the loop on the while loop"},"start":{"4359":88.74,"6060":564.58,"5811":6.12,"4498":423.62,"4443":309.74,"4402":200.98,"6042":526.4,"5195":1543.22,"5818":25.18},"end":{"4359":89.38,"6060":565.74,"5811":7.22,"4498":424.4,"4443":311.28,"4402":202.34,"6042":528.44,"5195":1544.2,"5818":29.98}}
+
+User query:
+where was while loop has been taught
+
+Rules:
+1. Answer in ONE line only.
+2. Mention only:
+   - "number"
+   - Topic/title inferred from the text
+   - Start timestamp
+   - End timestamp
+   - chunk_id 
+   
+3. Do not explain concepts.
+4. Do not add introductions.
+5. Do not add conclusions.
+6. If no relevant content exists, reply exactly:
+   "No relevant video found."
+
+"""
